@@ -36,7 +36,12 @@ class UserNameController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new UserId();
+        $user->username = $request->username;
+        $user->password = $request->password;
+        $user->email = $request->email;
+
+        $user->save();
     }
 
     /**
@@ -70,7 +75,13 @@ class UserNameController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = UserId::findOrFail($request->id);
+        $user->username = $request->username;
+        $user->password = $request->password;
+        $user->email = $request->email;
+
+        $user->save();
+        return $user;
     }
 
     /**
@@ -81,6 +92,7 @@ class UserNameController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = UserId::destroy($id);
+        return $user;
     }
 }
