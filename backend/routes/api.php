@@ -28,4 +28,4 @@ Route::delete('/books/{id}',[BookController::class,'destroy']); // deletes book
 Route::get('/users',[UserIdController::class,'index']); //shows data
 Route::post('/users/',[UserIdController::class,'store']); //creates a new user
 Route::put('/users/{id}',[UserIdController::class,'update']); //updates user
-Route::delete('/users/{id}',[UserIdController::class,'destroy']); // deletes user
+Route::delete('/users/{id}',[UserIdController::class,'destroy']); // deletes user ll
