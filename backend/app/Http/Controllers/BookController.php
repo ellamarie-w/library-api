@@ -38,6 +38,7 @@ class BookController extends Controller
     {
         $book = new Book();
         $book->bookName = $request->book_name;
+        $book->BookImage = $request->BookImage;
         $book->category = $request->category;
         $book->review = $request->review;
         $book->author = $request->author;
@@ -80,6 +81,7 @@ class BookController extends Controller
     {
         $book = Book::findOrFail($request->id);
         $book->bookName = $request->book_name;
+        $book->BookImage = $request->BookImage;
         $book->category = $request->category;
         $book->review = $request->review;
         $book->author = $request->author;
