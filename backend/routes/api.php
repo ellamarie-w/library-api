@@ -2,8 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Api\Http\Controllers\BookController;
-use Api\Http\Controllers\UserIdController;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\UserIdController;
 
 /*
 |--------------------------------------------------------------------------
