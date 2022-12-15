@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UserId;
 
-class UserNameController extends Controller
+class UserIdController extends Controller
 {
     /**
      * Display a listing of the resource.
