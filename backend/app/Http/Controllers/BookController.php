@@ -37,7 +37,7 @@ class BookController extends Controller
     public function store(Request $request)
     {
         $book = new Book();
-        $book->bookName = $request->book_name;
+        $book->book_name = $request->book_name;
         $book->BookImage = $request->BookImage;
         $book->category = $request->category;
         $book->review = $request->review;
@@ -80,7 +80,7 @@ class BookController extends Controller
     public function update(Request $request, $id)
     {
         $book = Book::findOrFail($request->id);
-        $book->bookName = $request->book_name;
+        $book->book_name = $request->book_name;
         $book->BookImage = $request->BookImage;
         $book->category = $request->category;
         $book->review = $request->review;
